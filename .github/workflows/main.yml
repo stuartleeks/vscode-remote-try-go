@@ -51,6 +51,6 @@ jobs:
           # Change this to point to your image name
           imageName: ghcr.io/stuartleeks/vscode-remote-try-go
           # Change this to be your CI task/script
-          runCmd: go build
+          runCmd: go build && ls -al
           
           
