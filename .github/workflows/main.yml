@@ -33,9 +33,9 @@ jobs:
       - name: Run a multi-line script
         run: |
           echo '--------------------------------------------------'
-          ls /home/runner/work/_actions/stuartleeks/devcontainer-build-run/temp-cli-fix-2/github-action
+          ls /home/runner/work/_actions/stuartleeks/devcontainer-build-run/temp-cli-fix-3/github-action
           echo '--------------------------------------------------'
-          ls /home/runner/work/_actions/stuartleeks/devcontainer-build-run/temp-cli-fix-2/github-action/cli
+          ls /home/runner/work/_actions/stuartleeks/devcontainer-build-run/temp-cli-fix-3/github-action/cli
 
       - name: Set up Docker BuildKit
         uses: docker/setup-buildx-action@v1
@@ -48,7 +48,7 @@ jobs:
           password: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Build and run dev container task
-        uses: stuartleeks/devcontainer-build-run@temp-cli-fix-2
+        uses: stuartleeks/devcontainer-build-run@temp-cli-fix-3
         with:
           # Change this to point to your image name
           imageName: ghcr.io/stuartleeks/vscode-remote-try-go
