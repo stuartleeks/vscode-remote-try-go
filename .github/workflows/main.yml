@@ -46,7 +46,7 @@ jobs:
           password: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Build and run dev container task
-        uses: stuartleeks/devcontainer-build-run@main
+        uses: stuartleeks/devcontainer-build-run@temp-cli-fix
         with:
           # Change this to point to your image name
           imageName: ghcr.io/stuartleeks/vscode-remote-try-go
